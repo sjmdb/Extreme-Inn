@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTREME INN</title>
+    <link rel="stylesheet" href="css/bookingpage.css">
+</head>
+<body>
+
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+        <label for="name">YOUR DETAILS:</label>
+      
+      <input type="text" id="name" name="visitor_name" placeholder="Your Name*" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+      <input type="text" id="number" name="visitor_number" placeholder="Phone Number*" required>
+    </div>
+    <div class="elem-group">
+      <input type="text" id="email" name="email" placeholder="Email*"  required>
+    </div>
+    <div class="elem-group">
+        <label for="message">OTHER REQUESTS:</label>
+        <textarea id="message" name="visitor_message" placeholder="" required></textarea>
+      </div>
+    <div class="elem-group">
+    <label for="name">PAYMENT INFORMATION:</label>
+    <div class="elem-group">
+        <input type="tel" id="cardnum" name="visitor_phone" placeholder="Card Number*" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <div class="elem-group">
+        <input type="tel" id="expdate" name="visitor_phone" placeholder="Expiration Date MM/YY*" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <div class="elem-group">
+        <input type="tel" id="nameonc" name="visitor_phone" placeholder="Name on Card*" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    
+    <input type="submit" value="COMPLETE BOOKING" class="btn">
+  </form>
+
+  <script src="lib/Angular.js"></script>
+<script src="js/bookingpage.js"></script>
+  </body>
+
+ 
